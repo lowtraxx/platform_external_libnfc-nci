@@ -1120,6 +1120,9 @@ NFCSTATUS phDnldNfc_LoadFW(const char* pathName, uint8_t **pImgInfo, uint16_t* p
 #endif
     }
 
+    /* Hardcode the pathname for now */
+    pathName = "/system/vendor/firmware/libpn547_fw.so";
+
     /* check if the handle is not NULL then free the library */
     if(pFwLibHandle != NULL)
     {
@@ -1194,6 +1197,9 @@ NFCSTATUS phDnldNfc_LoadRecoveryFW (const char* pathName, uint8_t **pImgInfo, ui
         pathName = "/system/vendor/firmware/libpn547_fw.so";
 #endif
     }
+
+    /* Hardcode the pathname for now */
+    pathName = "/system/vendor/firmware/libpn547_fw.so";
 
     /* check if the handle is not NULL then free the library */
     if (pFwLibHandle != NULL)
